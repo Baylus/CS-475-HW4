@@ -128,7 +128,7 @@ int main(int argc, char* argv[]) {
    else {
       data = Matrix( picOrig );
    }
-   data.setName("Pic");
+   data.setName("Image");
 
    if (k > data.numRows()) {
       ddebug("K is larger than R, setting K to be 0.75 * R");
@@ -224,7 +224,9 @@ int main(int argc, char* argv[]) {
    eValues.printSize();
    compressedData.printSize();
    recoveredPic.printSize();
-   printf("Per Pixel Dist^2: %.5f\n", distPerPixel);
+   printf("Per Pixel Dist^2: ");
+   cout.precision(6);
+   cout << distPerPixel << endl;
 
    return 0;
 }

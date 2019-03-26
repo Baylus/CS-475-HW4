@@ -1,7 +1,7 @@
 =================================================
 Output of Building User Code
 Exploding tar files
-20190326011359-tunn4356-CS475-S19-A4.tar
+20190326012755-tunn4356-CS475-S19-A4.tar
 pca.cpp
 mat.cpp
 rand.cpp
@@ -59,7 +59,7 @@ g++  -O3 -Wall  -c -o pca.o pca.cpp
 g++ -O3 -Wall mat.o rand.o pca.o -lm -o pca
 
 was a program called pca built?
--rwxr-xr-x. 1 rs-cs-heckendo domain_users 128344 Mar 26 01:16 pca
+-rwxr-xr-x. 1 rs-cs-heckendo domain_users 128408 Mar 26 01:28 pca
 
 END OF BUILD
 =================================================
@@ -72,33 +72,33 @@ Limited to 80 seconds total run time and 2000 lines of output
 
 =================================
 pca 10 < girlWithPearlEarringSm.pgm
-(size of Pic: 300 X 256)
+(size of Image: 300 X 256)
 (size of Mean: 1 X 256)
 (size of EigenVectors: 256 X 256)
 (size of EigenValues: 1 X 256)
 (size of Encoded: 300 X 10)
 (size of Decoded: 300 X 256)
-Per Pixel Dist^2: 130.02790
+Per Pixel Dist^2: 130.028
 
 picdist z.pgm girlWithPearlEarringSm.pgm
 DIST2/pixel:   121.11
 
 =================================
 pca 100 < girlWithPearlEarringSm.pgm
-(size of Pic: 300 X 256)
+(size of Image: 300 X 256)
 (size of Mean: 1 X 256)
 (size of EigenVectors: 256 X 256)
 (size of EigenValues: 1 X 256)
 (size of Encoded: 300 X 100)
 (size of Decoded: 300 X 256)
-Per Pixel Dist^2: 0.93901
+Per Pixel Dist^2: 0.939007
 
 picdist z.pgm girlWithPearlEarringSm.pgm
 DIST2/pixel:     1.01
 
 =================================
 pca 10 < mondrianRedBlueAndYellow.ppm
-(size of Pic: 203 X 600)
+(size of Image: 203 X 600)
 (size of Mean: 1 X 600)
 (size of EigenVectors: 600 X 600)
 (size of EigenValues: 1 X 600)
@@ -111,26 +111,26 @@ DIST2/pixel:     5.83
 
 =================================
 pca -10 < mondrianRedBlueAndYellow.ppm
-(size of Pic: 203 X 600)
+(size of Image: 203 X 600)
 (size of Mean: 1 X 600)
 (size of EigenVectors: 600 X 600)
 (size of EigenValues: 1 X 600)
 (size of Encoded: 203 X 152)
 (size of Decoded: 203 X 600)
-Per Pixel Dist^2: 0.04802
+Per Pixel Dist^2: 0.0480186
 
 picdist z.ppm mondrianRedBlueAndYellow.ppm
 DIST2/pixel:     0.50
 
 =================================
 pca 100 < mondrianRedBlueAndYellow.ppm
-(size of Pic: 203 X 600)
+(size of Image: 203 X 600)
 (size of Mean: 1 X 600)
 (size of EigenVectors: 600 X 600)
 (size of EigenValues: 1 X 600)
 (size of Encoded: 203 X 100)
 (size of Decoded: 203 X 600)
-Per Pixel Dist^2: 0.24415
+Per Pixel Dist^2: 0.244148
 
 picdist z.ppm mondrianRedBlueAndYellow.ppm
 DIST2/pixel:     0.60
@@ -140,7 +140,7 @@ kill all remaining processes
 nn: no process found
 =================================================
 Output Comparison
-ztest zexpected differ: char 283, line 9
+ztest zexpected differ: char 1292, line 48
 
 Your output differs from the expected output.
 digits in the day and time were changed to # for comparison.
@@ -158,33 +158,33 @@ Limited to 80 seconds total run time and 2000 lines of o	Limited to 80 seconds t
 
 =================================				=================================
 pca 10 < girlWithPearlEarringSm.pgm				pca 10 < girlWithPearlEarringSm.pgm
-(size of Pic: 300 X 256)				   |	(size of Image: 300 X 256)
+(size of Image: 300 X 256)					(size of Image: 300 X 256)
 (size of Mean: 1 X 256)						(size of Mean: 1 X 256)
 (size of EigenVectors: 256 X 256)				(size of EigenVectors: 256 X 256)
 (size of EigenValues: 1 X 256)					(size of EigenValues: 1 X 256)
 (size of Encoded: 300 X 10)					(size of Encoded: 300 X 10)
 (size of Decoded: 300 X 256)					(size of Decoded: 300 X 256)
-Per Pixel Dist^2: 130.02790				   |	Per Pixel Dist^2: 130.028
+Per Pixel Dist^2: 130.028					Per Pixel Dist^2: 130.028
 
 picdist z.pgm girlWithPearlEarringSm.pgm			picdist z.pgm girlWithPearlEarringSm.pgm
 DIST2/pixel: 121.11						DIST2/pixel: 121.11
 
 =================================				=================================
 pca 100 < girlWithPearlEarringSm.pgm				pca 100 < girlWithPearlEarringSm.pgm
-(size of Pic: 300 X 256)				   |	(size of Image: 300 X 256)
+(size of Image: 300 X 256)					(size of Image: 300 X 256)
 (size of Mean: 1 X 256)						(size of Mean: 1 X 256)
 (size of EigenVectors: 256 X 256)				(size of EigenVectors: 256 X 256)
 (size of EigenValues: 1 X 256)					(size of EigenValues: 1 X 256)
 (size of Encoded: 300 X 100)					(size of Encoded: 300 X 100)
 (size of Decoded: 300 X 256)					(size of Decoded: 300 X 256)
-Per Pixel Dist^2: 0.93901				   |	Per Pixel Dist^2: 0.939007
+Per Pixel Dist^2: 0.939007					Per Pixel Dist^2: 0.939007
 
 picdist z.pgm girlWithPearlEarringSm.pgm			picdist z.pgm girlWithPearlEarringSm.pgm
 DIST2/pixel: 1.01						DIST2/pixel: 1.01
 
 =================================				=================================
 pca 10 < mondrianRedBlueAndYellow.ppm				pca 10 < mondrianRedBlueAndYellow.ppm
-(size of Pic: 203 X 600)				   |	(size of Image: 203 X 600)
+(size of Image: 203 X 600)					(size of Image: 203 X 600)
 (size of Mean: 1 X 600)						(size of Mean: 1 X 600)
 (size of EigenVectors: 600 X 600)				(size of EigenVectors: 600 X 600)
 (size of EigenValues: 1 X 600)					(size of EigenValues: 1 X 600)
@@ -197,26 +197,26 @@ DIST2/pixel: 5.83						DIST2/pixel: 5.83
 
 =================================				=================================
 pca -10 < mondrianRedBlueAndYellow.ppm				pca -10 < mondrianRedBlueAndYellow.ppm
-(size of Pic: 203 X 600)				   |	(size of Image: 600 X 203)
+(size of Image: 203 X 600)				   |	(size of Image: 600 X 203)
 (size of Mean: 1 X 600)					   |	(size of Mean: 1 X 203)
 (size of EigenVectors: 600 X 600)			   |	(size of EigenVectors: 203 X 203)
 (size of EigenValues: 1 X 600)				   |	(size of EigenValues: 1 X 203)
 (size of Encoded: 203 X 152)				   |	(size of Encoded: 600 X 10)
 (size of Decoded: 203 X 600)				   |	(size of Decoded: 600 X 203)
-Per Pixel Dist^2: 0.04802				   |	Per Pixel Dist^2: 5.78364
+Per Pixel Dist^2: 0.0480186				   |	Per Pixel Dist^2: 5.78364
 
 picdist z.ppm mondrianRedBlueAndYellow.ppm			picdist z.ppm mondrianRedBlueAndYellow.ppm
 DIST2/pixel: 0.50					   |	DIST2/pixel: 6.11
 
 =================================				=================================
 pca 100 < mondrianRedBlueAndYellow.ppm				pca 100 < mondrianRedBlueAndYellow.ppm
-(size of Pic: 203 X 600)				   |	(size of Image: 203 X 600)
+(size of Image: 203 X 600)					(size of Image: 203 X 600)
 (size of Mean: 1 X 600)						(size of Mean: 1 X 600)
 (size of EigenVectors: 600 X 600)				(size of EigenVectors: 600 X 600)
 (size of EigenValues: 1 X 600)					(size of EigenValues: 1 X 600)
 (size of Encoded: 203 X 100)					(size of Encoded: 203 X 100)
 (size of Decoded: 203 X 600)					(size of Decoded: 203 X 600)
-Per Pixel Dist^2: 0.24415				   |	Per Pixel Dist^2: 0.244148
+Per Pixel Dist^2: 0.244148					Per Pixel Dist^2: 0.244148
 
 picdist z.ppm mondrianRedBlueAndYellow.ppm			picdist z.ppm mondrianRedBlueAndYellow.ppm
 DIST2/pixel: 0.60						DIST2/pixel: 0.60
