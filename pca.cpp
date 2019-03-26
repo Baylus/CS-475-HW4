@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
                debug = true;
             }
          } 
-         else if ( (i > 0) && ( argv[i][0] != '-' ) && (k == 0) ) {
+         else if ( (i > 0) && (k == 0) ) {
             // if argument isnt the program name, 
             //   and it isnt a flag, and we haven't found k yet
             k = strtol( argv[i], NULL, 10 );
