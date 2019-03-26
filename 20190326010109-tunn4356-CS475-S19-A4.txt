@@ -1,0 +1,247 @@
+=================================================
+Output of Building User Code
+Exploding tar files
+20190326010109-tunn4356-CS475-S19-A4.tar
+pca.cpp
+mat.cpp
+rand.cpp
+randf.cpp
+randmt.cpp
+mat.h
+rand.h
+
+Undossing tarred files assumes all files are ascii and not binary
+
+Extracting test files
+ZTESTS/
+ZTESTS/._abbeyRoadAlbumCover.ppm
+ZTESTS/abbeyRoadAlbumCover.ppm
+ZTESTS/._girlWithPearlEarringJohansson.pgm
+ZTESTS/girlWithPearlEarringJohansson.pgm
+ZTESTS/mat.h
+ZTESTS/._girlWithPearlEarringSm.pgm
+ZTESTS/girlWithPearlEarringSm.pgm
+ZTESTS/picdist.cpp
+ZTESTS/._girlWithPearlEarringJohanssonSm.ppm
+ZTESTS/girlWithPearlEarringJohanssonSm.ppm
+ZTESTS/._mondrianRedBlueAndYellow.ppm
+ZTESTS/mondrianRedBlueAndYellow.ppm
+ZTESTS/._girlWithPearlEarringJohanssonSm.pgm
+ZTESTS/girlWithPearlEarringJohanssonSm.pgm
+ZTESTS/._girlWithPearlEarringSm.ppm
+ZTESTS/girlWithPearlEarringSm.ppm
+ZTESTS/rand.cpp
+ZTESTS/._girlWithPearlEarringJohansson.ppm
+ZTESTS/girlWithPearlEarringJohansson.ppm
+ZTESTS/._abbeyRoadAlbumCover.pgm
+ZTESTS/abbeyRoadAlbumCover.pgm
+ZTESTS/._mtest.ppm
+ZTESTS/mtest.ppm
+ZTESTS/mat.cpp
+ZTESTS/rand.h
+ZTESTS/._marslandBook.ppm
+ZTESTS/marslandBook.ppm
+ZTESTS/._mondrianRedBlueAndYellow.pgm
+ZTESTS/mondrianRedBlueAndYellow.pgm
+
+build picture comparator
+
+Remove Tmp dir contents
+
+Remove the code you are about to make, if it is there
+
+Making your software by running make.
+This assumes you have a file named makefile or Makefile.
+g++     pca.cpp   -o pca
+/tmp/ccw3Y3ZV.o: In function `main':
+pca.cpp:(.text+0x3db): undefined reference to `Matrix::Matrix(std::string)'
+pca.cpp:(.text+0x5a5): undefined reference to `Matrix::readImagePpm(std::string, std::string)'
+pca.cpp:(.text+0x5b4): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x66d): undefined reference to `Matrix::readImagePgm(std::string, std::string)'
+pca.cpp:(.text+0x67c): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x719): undefined reference to `Matrix::Matrix(std::string)'
+pca.cpp:(.text+0x756): undefined reference to `Matrix::transpose()'
+pca.cpp:(.text+0x76f): undefined reference to `Matrix::operator=(Matrix const&)'
+pca.cpp:(.text+0x77e): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x7cd): undefined reference to `Matrix::Matrix(Matrix const&, std::string)'
+pca.cpp:(.text+0x7e6): undefined reference to `Matrix::operator=(Matrix const&)'
+pca.cpp:(.text+0x7f5): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x856): undefined reference to `Matrix::setName(std::string)'
+pca.cpp:(.text+0x9b0): undefined reference to `Matrix::Matrix(Matrix const&, std::string)'
+pca.cpp:(.text+0x9e7): undefined reference to `Matrix::meanVec()'
+pca.cpp:(.text+0xa2a): undefined reference to `Matrix::setName(std::string)'
+pca.cpp:(.text+0xa61): undefined reference to `Matrix::subRowVector(Matrix const&)'
+pca.cpp:(.text+0xad1): undefined reference to `Matrix::cov()'
+pca.cpp:(.text+0xb72): undefined reference to `Matrix::Matrix(Matrix const&, std::string)'
+pca.cpp:(.text+0xba9): undefined reference to `Matrix::eigenSystem()'
+pca.cpp:(.text+0xbec): undefined reference to `Matrix::setName(std::string)'
+pca.cpp:(.text+0xc5b): undefined reference to `Matrix::printSize(std::string) const'
+pca.cpp:(.text+0xcbc): undefined reference to `Matrix::printSize(std::string) const'
+pca.cpp:(.text+0xd2c): undefined reference to `Matrix::print(std::string)'
+pca.cpp:(.text+0xd8d): undefined reference to `Matrix::print(std::string)'
+pca.cpp:(.text+0xe31): undefined reference to `Matrix::extract(int, int, int, int)'
+pca.cpp:(.text+0xea8): undefined reference to `Matrix::dotT(Matrix const&)'
+pca.cpp:(.text+0xeeb): undefined reference to `Matrix::setName(std::string)'
+pca.cpp:(.text+0xf80): undefined reference to `Matrix::dot(Matrix const&)'
+pca.cpp:(.text+0xfc3): undefined reference to `Matrix::setName(std::string)'
+pca.cpp:(.text+0xffa): undefined reference to `Matrix::addRowVector(Matrix const&)'
+pca.cpp:(.text+0x106a): undefined reference to `Matrix::dist2(Matrix const&) const'
+pca.cpp:(.text+0x10f9): undefined reference to `Matrix::Matrix(std::string)'
+pca.cpp:(.text+0x1136): undefined reference to `Matrix::transpose()'
+pca.cpp:(.text+0x114f): undefined reference to `Matrix::operator=(Matrix const&)'
+pca.cpp:(.text+0x115e): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x11ad): undefined reference to `Matrix::Matrix(Matrix const&, std::string)'
+pca.cpp:(.text+0x11c6): undefined reference to `Matrix::operator=(Matrix const&)'
+pca.cpp:(.text+0x11d5): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x12de): undefined reference to `Matrix::writeImagePpm(std::string, std::string)'
+pca.cpp:(.text+0x1373): undefined reference to `Matrix::writeImagePgm(std::string, std::string)'
+pca.cpp:(.text+0x143a): undefined reference to `Matrix::printSize(std::string) const'
+pca.cpp:(.text+0x149b): undefined reference to `Matrix::printSize(std::string) const'
+pca.cpp:(.text+0x14f0): undefined reference to `Matrix::printSize(std::string) const'
+pca.cpp:(.text+0x153f): undefined reference to `Matrix::printSize(std::string) const'
+pca.cpp:(.text+0x158e): undefined reference to `Matrix::printSize(std::string) const'
+/tmp/ccw3Y3ZV.o:pca.cpp:(.text+0x15dd): more undefined references to `Matrix::printSize(std::string) const' follow
+/tmp/ccw3Y3ZV.o: In function `main':
+pca.cpp:(.text+0x163a): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x1649): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x1658): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x1667): undefined reference to `Matrix::~Matrix()'
+pca.cpp:(.text+0x1676): undefined reference to `Matrix::~Matrix()'
+/tmp/ccw3Y3ZV.o:pca.cpp:(.text+0x1685): more undefined references to `Matrix::~Matrix()' follow
+collect2: error: ld returned 1 exit status
+make: *** [pca] Error 1
+
+was a program called pca built?
+chmod: cannot access 'pca': No such file or directory
+ls: cannot access pca: No such file or directory
+
+END OF BUILD
+=================================================
+Complete Output of Testing
+Limited to 80 seconds total run time and 2000 lines of output
+
+* ================================================ *
+|      Tests for CS475 Assignment 4                |
+* ================================================ *
+
+=================================
+pca 10 < girlWithPearlEarringSm.pgm
+./Tests/localtest: line 17: pca: command not found
+
+picdist z.pgm girlWithPearlEarringSm.pgm
+ERROR(readImagePixmap): Trying to open file "z.pgm" but failed.
+
+=================================
+pca 100 < girlWithPearlEarringSm.pgm
+./Tests/localtest: line 25: pca: command not found
+
+picdist z.pgm girlWithPearlEarringSm.pgm
+ERROR(readImagePixmap): Trying to open file "z.pgm" but failed.
+
+=================================
+pca 10 < mondrianRedBlueAndYellow.ppm
+./Tests/localtest: line 33: pca: command not found
+
+picdist z.ppm mondrianRedBlueAndYellow.ppm
+ERROR(readImagePixmap): Trying to open file "z.ppm" but failed.
+
+=================================
+pca -10 < mondrianRedBlueAndYellow.ppm
+./Tests/localtest: line 41: pca: command not found
+
+picdist z.ppm mondrianRedBlueAndYellow.ppm
+ERROR(readImagePixmap): Trying to open file "z.ppm" but failed.
+
+=================================
+pca 100 < mondrianRedBlueAndYellow.ppm
+./Tests/localtest: line 49: pca: command not found
+
+picdist z.ppm mondrianRedBlueAndYellow.ppm
+ERROR(readImagePixmap): Trying to open file "z.ppm" but failed.
+=================================
+END OF TESTS
+kill all remaining processes
+nn: no process found
+=================================================
+Output Comparison
+ztest zexpected differ: char 274, line 9
+
+Your output differs from the expected output.
+digits in the day and time were changed to # for comparison.
+This is a two column comparison with YOUR OUTPUT ON THE LEFT
+with the EXPECTED OUTPUT ON THE RIGHT.
+
+NOTE: In the case of stochastic algorithms like Neural Network training
+we can only expect that you will be qualitatively the same.  You
+should hand check that your output seems reasonable.
+Limited to 80 seconds total run time and 2000 lines of o	Limited to 80 seconds total run time and 2000 lines of o
+
+* ================================================ *		* ================================================ *
+| Tests for CS475 Assignment 4 |				| Tests for CS475 Assignment 4 |
+* ================================================ *		* ================================================ *
+
+=================================				=================================
+pca 10 < girlWithPearlEarringSm.pgm				pca 10 < girlWithPearlEarringSm.pgm
+./Tests/localtest: line 17: pca: command not found	   |	(size of Image: 300 X 256)
+							   >	(size of Mean: 1 X 256)
+							   >	(size of EigenVectors: 256 X 256)
+							   >	(size of EigenValues: 1 X 256)
+							   >	(size of Encoded: 300 X 10)
+							   >	(size of Decoded: 300 X 256)
+							   >	Per Pixel Dist^2: 130.028
+
+picdist z.pgm girlWithPearlEarringSm.pgm			picdist z.pgm girlWithPearlEarringSm.pgm
+ERROR(readImagePixmap): Trying to open file "z.pgm" but    |	DIST2/pixel: 121.11
+
+=================================				=================================
+pca 100 < girlWithPearlEarringSm.pgm				pca 100 < girlWithPearlEarringSm.pgm
+./Tests/localtest: line 25: pca: command not found	   |	(size of Image: 300 X 256)
+							   >	(size of Mean: 1 X 256)
+							   >	(size of EigenVectors: 256 X 256)
+							   >	(size of EigenValues: 1 X 256)
+							   >	(size of Encoded: 300 X 100)
+							   >	(size of Decoded: 300 X 256)
+							   >	Per Pixel Dist^2: 0.939007
+
+picdist z.pgm girlWithPearlEarringSm.pgm			picdist z.pgm girlWithPearlEarringSm.pgm
+ERROR(readImagePixmap): Trying to open file "z.pgm" but    |	DIST2/pixel: 1.01
+
+=================================				=================================
+pca 10 < mondrianRedBlueAndYellow.ppm				pca 10 < mondrianRedBlueAndYellow.ppm
+./Tests/localtest: line 33: pca: command not found	   |	(size of Image: 203 X 600)
+							   >	(size of Mean: 1 X 600)
+							   >	(size of EigenVectors: 600 X 600)
+							   >	(size of EigenValues: 1 X 600)
+							   >	(size of Encoded: 203 X 10)
+							   >	(size of Decoded: 203 X 600)
+							   >	Per Pixel Dist^2: 5.52174
+
+picdist z.ppm mondrianRedBlueAndYellow.ppm			picdist z.ppm mondrianRedBlueAndYellow.ppm
+ERROR(readImagePixmap): Trying to open file "z.ppm" but    |	DIST2/pixel: 5.83
+
+=================================				=================================
+pca -10 < mondrianRedBlueAndYellow.ppm				pca -10 < mondrianRedBlueAndYellow.ppm
+./Tests/localtest: line 41: pca: command not found	   |	(size of Image: 600 X 203)
+							   >	(size of Mean: 1 X 203)
+							   >	(size of EigenVectors: 203 X 203)
+							   >	(size of EigenValues: 1 X 203)
+							   >	(size of Encoded: 600 X 10)
+							   >	(size of Decoded: 600 X 203)
+							   >	Per Pixel Dist^2: 5.78364
+
+picdist z.ppm mondrianRedBlueAndYellow.ppm			picdist z.ppm mondrianRedBlueAndYellow.ppm
+ERROR(readImagePixmap): Trying to open file "z.ppm" but    |	DIST2/pixel: 6.11
+
+=================================				=================================
+pca 100 < mondrianRedBlueAndYellow.ppm				pca 100 < mondrianRedBlueAndYellow.ppm
+./Tests/localtest: line 49: pca: command not found	   |	(size of Image: 203 X 600)
+							   >	(size of Mean: 1 X 600)
+							   >	(size of EigenVectors: 600 X 600)
+							   >	(size of EigenValues: 1 X 600)
+							   >	(size of Encoded: 203 X 100)
+							   >	(size of Decoded: 203 X 600)
+							   >	Per Pixel Dist^2: 0.244148
+
+picdist z.ppm mondrianRedBlueAndYellow.ppm			picdist z.ppm mondrianRedBlueAndYellow.ppm
+ERROR(readImagePixmap): Trying to open file "z.ppm" but    |	DIST2/pixel: 0.60
+=================================				=================================

@@ -1,10 +1,10 @@
-BIN  = nn
+BIN  = pca
 
 CXX=g++
 CC=g++
 SHELL=/bin/sh
 
-CPPFLAGS= -L /usr/lib/libp/  -pg
+# CPPFLAGS= -L /usr/lib/libp/  -pg
 GCPPFLAGS=-g -Wall
 CPPFLAGS=-O3 -Wall
 
@@ -12,7 +12,7 @@ CFLAGS=$(CPPFLAGS)
 LIBS = -lm
 
 SRCS=\
-nn.cpp\
+$(BIN).cpp\
 mat.cpp\
 rand.cpp\
 randf.cpp\
@@ -29,14 +29,8 @@ rand.o
 $(BIN):	$(OBJS) $(BIN).o
 	$(CC) $(CFLAGS) $(OBJS) $(BIN).o $(LIBS) -o $(BIN)
 
-$(BIN)oneof:	$(OBJS) $(BIN)oneof.o
-	$(CC) $(CFLAGS) $(OBJS) $(BIN)oneof.o $(LIBS) -o $(BIN)oneof
-
 debug$(BIN):	$(OBJS) $(BIN).o
 	$(CC) $(GCPPFLAGS) $(OBJS) $(BIN).o $(LIBS) -o $(BIN)
-
-debug$(BIN)oneof:	$(OBJS) $(BIN)oneof.o
-	$(CC) $(GCPPFLAGS) $(OBJS) $(BIN)oneof.o $(LIBS) -o $(BIN)oneof
 
 size:	$(HDRS)  $(SRCS) 
 	wc -l $?
@@ -47,12 +41,12 @@ srcs:	$(HDRS)  $(SRCS)
 all:
 	touch $(HDRS)  $(SRCS) 
 
-debug:	$(OBJS) nn.cpp
-	$(CC) $(GCPPFLAGS) $(OBJS) nn.cpp $(LIBS) -o nn
+debug:	$(OBJS) $(BIN).cpp
+	$(CC) $(GCPPFLAGS) $(OBJS) $(BIN).cpp $(LIBS) -o $(BIN)
 
 clean:
 	/bin/rm -f *.o $(BIN)*.tar *~ core gmon.out a.out
 
 tar: makefile $(SRCS) $(HDRS)
-	tar -cvzf "$(date +"%Y-%m-%d") $(BIN).tar" $(SRCS) $(HDRS) $(DOCS)
+	tar -cvf "$(BIN).tar" $(SRCS) $(HDRS) $(DOCS)
 	ls -l $(BIN)*tar
